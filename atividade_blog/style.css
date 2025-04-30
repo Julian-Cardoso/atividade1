@@ -1,0 +1,177 @@
+/* Já existente */
+header {
+  background-color: #135e13;
+  padding: 20px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Rubik Burned", cursive;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header img {
+  max-height: 70px;
+  margin-left: 15px;
+}
+
+header h1 {
+  color: #922307;
+  margin-bottom: 15px;
+  font-size: 3em;
+  text-align: center;
+}
+
+header nav {
+  background-color: #336333;
+  padding: 10px;
+  text-align: center;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+}
+
+header nav li {
+  display: inline;
+  margin: 0 15px;
+}
+
+header nav a {
+  color: #f0e68c;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+header nav a:hover {
+  color: #af2907;
+}
+
+.intro {
+  margin: 20px;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-bottom: 5px solid #228b22;
+  background-color: #f5f5dc;
+}
+
+.intro h3 {
+  color: #333;
+  font-size: 1.8em;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.intro p {
+  color: #313131;
+  line-height: 1.6;
+}
+
+.intro p strong {
+  color: #a0522d;
+  font-weight: bold;
+}
+
+main h2 {
+  padding: 10px;
+  margin: 10px;
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #922307;
+}
+
+article {
+  justify-content: center;
+  margin: 20px;
+  padding: 30px;
+  border: 1px solid #228b22;
+  background-color: #f5f5dc;
+  max-width: 800px;
+}
+
+article h3 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: left;
+  color: #006400;
+}
+
+article section {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+article p {
+  flex: 1;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+article img {
+  max-width: 250px;
+  height: auto;
+  border-radius: 8px;
+}
+
+aside {
+  background-color: #e6f2d9;
+  border-left: 6px solid #228b22;
+  padding: 20px;
+  margin: 20px;
+  font-family: Arial, sans-serif;
+  max-width: 300px;
+}
+
+aside h2 {
+  font-size: 1.8em;
+  color: #135e13;
+  margin-bottom: 15px;
+}
+
+aside ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+aside li {
+  margin-bottom: 10px;
+}
+
+aside a {
+  text-decoration: none;
+  color: #922307;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+aside a:hover {
+  color: #135e13;
+  text-decoration: underline;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #228b22;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+footer img {
+  max-height: 50px;
+  width: auto;
+}
