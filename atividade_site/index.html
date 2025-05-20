@@ -4,12 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>🚀Flex-layout</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" id="theme" />
   </head>
   <body>
     <header>
-      <h1>My WebSite</h1>
+      <h1>Meu Site</h1>
       <p>With a <strong>Flexible</strong> layout</p>
+      <button onclick="swapTheme()" id="button-dark">🌘 Modo Escuro</button>
+      <button onclick="swapTheme()" id="button-light">☀️ Modo Claro</button>
     </header>
     <nav>
       <a href="Link-1">Link 1</a>
@@ -20,35 +22,56 @@
 
     <main>
       <div class="container-1">
-        <h5>About me</h5>
-        <p>Photo of me:</p>
-        <div class="box-1">image</div>
-        <p>
-          Some text about me in culpa qui officia deserunt mollit anime sei la
-          oq
-        </p>
-        <h5>More Text</h5>
-        <p>
-          Some text about me in culpa qui officia deserunt mollit anime sei la
-          oq
-        </p>
-        <div class="box-2">Image</div>
-        <div class="box-2">Image</div>
-        <div class="box-2">Image</div>
+        <h5>Sobre mim</h5>
+        <p>Minha foto:</p>
+        <div class="box-1">
+          <img src="./imagens/julianMirim.jpg" alt="Minha foto pequeno" />
+          <p>
+            Olá! Meu nome é Julian Cardoso. Sou uma pessoa apaixonada por
+            tecnologia, criatividade e aprender coisas novas. Gosto de explorar
+            ideias, criar projetos e sempre buscar melhorar.
+          </p>
+          <h5>Curiosidades</h5>
+          <p>
+            Nas horas vagas, gosto de assistir séries, jogar, desenhar e estudar
+            sobre desenvolvimento web. Adoro desafios que me fazem sair da zona
+            de conforto e crescer como pessoa e profissional.
+          </p>
+          <div class="box-2">💡 desenvolvimento</div>
+          <div class="box-2">🎮 Jogos</div>
+          <div class="box-2">📷 Fotografia</div>
+        </div>
       </div>
 
       <div class="container-2">
-        <h5>TITLE HEADING</h5>
-        <p><b>Title description, Maio 19, 2025</b></p>
-        <div class="box-1">Image</div>
+        <h5>Minha jornada</h5>
+        <p><b>Começando uma nova fase - Maio 19, 2025</b></p>
+        <div class="box-1">
+          <img src="./imagens/github.png" alt="github" />
+          <img src="./imagens/codigo.png" alt="codigo" />
+          <img src="./imagens/contos.png" alt="contos" />
+        </div>
         <p>
-          Some text about me in culpa qui officia deserunt mollit anime sei la
-          oq Some text about me in culpa qui officia deserunt mollit anime sei
-          la oq
+          Desde cedo me interesso por tecnologia e criação. Hoje estou
+          mergulhando em novas experiências, aprendendo mais sobre programação,
+          design e outras áreas criativas que me motivam a seguir em frente.
+          Como vemos nas imagens, meu github é um lugar onde compartilho meus
+          projetos e ideias. O código é a minha forma de expressão, e cada linha
+          que escrevo é uma nova história que estou contando. Com isso, estou
+          dando vida a contos e narrativas que antes estavam apenas na minha
+          mente. Como o "Contos da nossa terra", que é um projeto que estou
+          desenvolvendo com muito carinho, já que é algo que sempre me cativou,
+          e nunca achei nada que tivesse a mesma proposta.
+        </p>
+        <p>
+          Meu objetivo é continuar crescendo, colaborando com pessoas incríveis
+          e deixando minha marca através do que eu construo e compartilho.
         </p>
       </div>
     </main>
 
     <footer><b>Footer</b></footer>
   </body>
+
+  <script src="button.js"></script>
 </html>
