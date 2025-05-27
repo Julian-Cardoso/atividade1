@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .lorem {
+        max-width: 700px;
+        margin: 30px auto;
+        font-size: 18px;
+      }
+      .notification-card {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        width: 250px;
+        bottom: 20px;
+        right: 20px;
+        background: white;
+        color: black;
+        padding: 18px;
+        border-radius: 18px;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 1);
+        z-index: 1;
+      }
+      .card-header {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+      }
+      .close-btn {
+        background: transparent;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+        color: #888;
+      }
+      .close-btn:hover {
+        color: #e53935;
+      }
+      .card-content {
+        display: flex;
+        flex-direction: column;
+        margin-top: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="lorem">
+      <h2>Lorem Ipsum</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+        euismod, urna eu tincidunt consectetur, nisi nisl aliquam nunc, eget
+        aliquam massa nisi eu velit. Mauris euismod, sapien eu commodo cursus,
+        nisi nisl aliquam nunc, eget aliquam massa nisi eu velit. Pellentesque
+        euismod, urna eu tincidunt consectetur, nisi nisl aliquam nunc, eget
+        aliquam massa nisi eu velit.
+      </p>
+      <p>
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+        accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
+        illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+        explicabo.
+      </p>
+      <p>
+        Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
+        suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
+      </p>
+      <p>
+        Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse
+        quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
+        voluptas nulla pariatur?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+        euismod, urna eu tincidunt consectetur, nisi nisl aliquam nunc, eget
+        aliquam massa nisi eu velit. Mauris euismod, sapien eu commodo cursus,
+        nisi nisl aliquam nunc, eget aliquam massa nisi eu velit. Pellentesque
+        euismod, urna eu tincidunt consectetur, nisi nisl aliquam nunc, eget
+        aliquam massa nisi eu velit.
+      </p>
+      <p>
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+        accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
+        illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+        explicabo.
+      </p>
+      <p>
+        Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
+        suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
+      </p>
+      <p>
+        Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse
+        quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
+        voluptas nulla pariatur?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+        euismod, urna eu tincidunt consectetur, nisi nisl aliquam nunc, eget
+        aliquam massa nisi eu velit. Mauris euismod, sapien eu commodo cursus,
+        nisi nisl aliquam nunc, eget aliquam massa nisi eu velit. Pellentesque
+        euismod, urna eu tincidunt consectetur, nisi nisl aliquam nunc, eget
+        aliquam massa nisi eu velit.
+      </p>
+      <p>
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+        accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
+        illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+        explicabo.
+      </p>
+      <p>
+        Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
+        suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
+      </p>
+      <p>
+        Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse
+        quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
+        voluptas nulla pariatur?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+        euismod, urna eu tincidunt consectetur, nisi nisl aliquam nunc, eget
+        aliquam massa nisi eu velit. Mauris euismod, sapien eu commodo cursus,
+        nisi nisl aliquam nunc, eget aliquam massa nisi eu velit. Pellentesque
+        euismod, urna eu tincidunt consectetur, nisi nisl aliquam nunc, eget
+        aliquam massa nisi eu velit.
+      </p>
+      <p>
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+        accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
+        illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+        explicabo.
+      </p>
+      <p>
+        Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
+        suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
+      </p>
+      <p>
+        Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse
+        quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
+        voluptas nulla pariatur?
+      </p>
+    </div>
+    <div class="notification-card">
+      <div class="card-header">
+        <button class="close-btn" onclick="fechar()">X</button>
+      </div>
+      <div class="card-content">
+        <h3>Novidade!</h3>
+        <p>Confira nossos novos produtos.</p>
+      </div>
+    </div>
+    <script>
+      function fechar() {
+        const card = document.querySelector(".notification-card");
+        card.style.display = "none";
+      }
+    </script>
+  </body>
+</html>
