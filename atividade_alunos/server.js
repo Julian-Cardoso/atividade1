@@ -39,6 +39,17 @@ app.put("/alunos/:nome", (req, res) => {
   res.json({ message: "Aluno atualizado com sucesso!" });
 });
 
+// Excluir aluno
+app.delete("/alunos/:nome", (req, res) => {
+  const nome = req.params.nome;
+  const alunosIndex = alunos.findIndex((a) => a.nome === nome);
+  if (alunosIndex === -1) {
+    return res.status(404).json({ message: "Aluno não encontrado!" });
+  }
+  alunos.splice(alunosIndex, 1);
+  res.json({ message: "Aluno excluído com sucesso!" });
+});
+
 app.listen(PORT, () => {
   console.log(`Servidor rodando em http://localhost:${PORT}`);
 });

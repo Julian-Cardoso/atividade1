@@ -122,6 +122,7 @@
         border-radius: 6px;
         cursor: pointer;
         transition: background-color 0.3s ease, transform 0.1s;
+        margin-right: 8px; /* Adicionado espaçamento à direita */
       }
 
       table button:hover {
@@ -217,8 +218,32 @@
                 }
               };
 
+              // Botão Excluir
+              const excluirBtn = document.createElement("button");
+              excluirBtn.textContent = "Excluir";
+              excluirBtn.style.backgroundColor = "#c0392b";
+              excluirBtn.onclick = () => {
+                if (
+                  confirm(`Deseja realmente excluir o aluno "${aluno.nome}"?`)
+                ) {
+                  fetch(
+                    `http://localhost:5500/alunos/${encodeURIComponent(
+                      aluno.nome
+                    )}`,
+                    {
+                      method: "DELETE",
+                    }
+                  )
+                    .then(() => carregarTabela())
+                    .catch((err) => {
+                      console.error("Erro ao excluir aluno:", err);
+                    });
+                }
+              };
+
               const cellAcao = row.insertCell();
               cellAcao.appendChild(editarBtn);
+              cellAcao.appendChild(excluirBtn);
             });
 
             const tfoot = table.createTFoot();
